@@ -1,0 +1,18 @@
+<mat-card class="example-card">
+    <mat-card-title-group>
+      <mat-card-title>
+          <h5>destination:{{forfait.destination}} de {{forfait.villedepart}}</h5>
+          <h1>{{forfait.hotel.nomhotel}} </h1>
+          <h4>{{forfait.hotel.nombreetoileshotel}} etoiles </h4>
+        </mat-card-title>
+      <mat-card-subtitle>
+        <p>nombre de chambres:{{forfait.hotel.nombrechambreshotel}} </p>
+        <p>plage ?:{{forfait.hotel.caracteristiqueshotel.faceplage}} </p></mat-card-subtitle>
+      <img mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+    </mat-card-title-group>
+    <mat-card-content>
+        <p>Depart: {{forfait.datededepart}}</p>
+        <p>Retour: {{forfait.datederetour}}</p>
+        <p>{{forfait.prix}}$</p>
+    </mat-card-content>
+  </mat-card>
