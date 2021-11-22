@@ -13,6 +13,13 @@
     <mat-card-content>
         <p>Depart: {{forfait.datededepart}}</p>
         <p>Retour: {{forfait.datederetour}}</p>
-        <p>{{forfait.prix}}$</p>
+        <div *ngIf="forfait.rabais; else elseBlock">
+          <p class="textebarre">{{forfait.prix}}$</p>
+          <p>{{forfait.prix-forfait.rabais}}$</p>
+          <p>Rabais de : {{forfait.rabais}}$</p>
+        </div>
+         <ng-template #elseBlock>
+          <p>tarif: {{forfait.prix}}</p>
+        </ng-template>
     </mat-card-content>
   </mat-card>

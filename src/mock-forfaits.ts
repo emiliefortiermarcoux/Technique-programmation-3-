@@ -23,6 +23,8 @@ export const FORFAITS : Forfait [] = [
     datededepart: '3 janvier 2022',
     datederetour: '10 janvier 2022',
     prix: 3000,
+    rabais:200,
+    vedette:true,
     },
 
     {
@@ -47,6 +49,7 @@ export const FORFAITS : Forfait [] = [
         datededepart: '10 fevrier 2022',
         datederetour: '14 fevrier 2022',
         prix: 350,
+        vedette:false,
         },
 
         {
@@ -71,6 +74,7 @@ export const FORFAITS : Forfait [] = [
             datededepart: '3 mars 2022',
             datederetour: '13 mars 2022',
             prix: 1500,
+            vedette: false,
             },
 
     

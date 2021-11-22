@@ -10,13 +10,19 @@ import { ListeForfaitsComponent } from './liste-forfaits/liste-forfaits.componen
 import { ForfaitComponent } from './forfait/forfait.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForfaitMiniComponent } from './forfait-mini/forfait-mini.component';
+import { EtoilesComponent } from './etoiles/etoiles.component';
+import { FormulaireDeGestionDesForfaitsComponent } from './formulaire-de-gestion-des-forfaits/formulaire-de-gestion-des-forfaits.component';
+import { FormulaireDeRechercheComponent } from './formulaire-de-recherche/formulaire-de-recherche.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListeForfaitsComponent,
     ForfaitComponent,
-    ForfaitMiniComponent
+    ForfaitMiniComponent,
+    EtoilesComponent,
+    FormulaireDeGestionDesForfaitsComponent,
+    FormulaireDeRechercheComponent
   ],
   imports: [
     BrowserModule,

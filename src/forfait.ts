@@ -8,5 +8,7 @@ export interface Forfait {
     datededepart: string;
     datederetour: string;
     prix: number;
+    rabais?: number;
+    vedette: boolean;
 }
 
