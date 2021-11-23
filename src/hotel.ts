@@ -4,12 +4,6 @@ export interface Hotel{
     coordonneeshotel: string;
     nombreetoileshotel: number;
     nombrechambreshotel: number;
-    caracteristiqueshotel: {
-        faceplage: boolean;
-        proximiteparc: boolean;
-        ascenseur: boolean;
-        miniclub: boolean;
-        mariages: boolean;
-        plage: boolean;
-    }
+    caracteristiqueshotel: string;
+    image: string;
 }

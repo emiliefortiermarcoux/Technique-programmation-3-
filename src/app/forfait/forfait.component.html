@@ -7,8 +7,8 @@
         </mat-card-title>
       <mat-card-subtitle>
         <p>nombre de chambres:{{forfait.hotel.nombrechambreshotel}} </p>
-        <p>plage ?:{{forfait.hotel.caracteristiqueshotel.faceplage}} </p></mat-card-subtitle>
-      <img mat-card-xl-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+        <p>{{forfait.hotel.caracteristiqueshotel}} </p></mat-card-subtitle>
+      <img mat-card-xl-image src="{{forfait.hotel.image}}" >
     </mat-card-title-group>
     <mat-card-content>
         <p>Depart: {{forfait.datededepart}}</p>

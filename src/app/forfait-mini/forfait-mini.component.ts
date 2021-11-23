@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Forfait } from '../../forfait'
 
-
 @Component({
   selector: 'app-forfait-mini',
   templateUrl: './forfait-mini.component.html',
