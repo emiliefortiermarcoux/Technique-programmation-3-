@@ -1,18 +1,18 @@
 <mat-card class="example-card">
     <mat-card-title-group>
       <mat-card-title>
-          <h5>destination:{{forfait.destination}} de {{forfait.villedepart}}</h5>
-          <h1>{{forfait.hotel.nomhotel}} </h1>
-          <h4>{{forfait.hotel.nombreetoileshotel}} etoiles </h4>
+          <h5>destination:{{forfait.destination | lowercase}} de {{forfait.villeDepart}}</h5>
+          <h1>{{forfait.hotel.nom| uppercase}} </h1>
+          <h4>{{forfait.hotel.nombreEtoiles}} etoiles </h4>
         </mat-card-title>
       <mat-card-subtitle>
-        <p>nombre de chambres:{{forfait.hotel.nombrechambreshotel}} </p>
-        <p>{{forfait.hotel.caracteristiqueshotel}} </p></mat-card-subtitle>
+        <p>nombre de chambres:{{forfait.hotel.nombreChambres}} </p>
+        <p>{{forfait.hotel.caracteristiques}} </p></mat-card-subtitle>
       <img mat-card-xl-image src="{{forfait.hotel.image}}" >
     </mat-card-title-group>
     <mat-card-content>
-        <p>Depart: {{forfait.datededepart}}</p>
-        <p>Retour: {{forfait.datederetour}}</p>
+        <p>Depart: {{forfait.dateDepart}}</p>
+        <p>Retour: {{forfait.dateRetour}}</p>
         <div *ngIf="forfait.rabais; else elseBlock">
           <p class="textebarre">{{forfait.prix}}$</p>
           <p>{{forfait.prix-forfait.rabais}}$</p>

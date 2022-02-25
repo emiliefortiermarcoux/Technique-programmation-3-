@@ -7,7 +7,7 @@ import { Forfait } from '../../forfait'
   styleUrls: ['./forfait-mini.component.css']
 })
 export class ForfaitMiniComponent implements OnInit {
-  @Input() forfait: Forfait;
+  @Input() forfait:Forfait;
   constructor() { }
 
   ngOnInit(): void {

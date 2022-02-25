@@ -1,12 +1,14 @@
+<div class="container">
 <div *ngIf="forfait.vedette">
 <p>destination:{{forfait.destination}} </p>
-<p>Ville de depart : {{forfait.villedepart}}</p>
+<p>Ville de depart : {{forfait.villeDepart}}</p>
 
-<p>nom de l'hotel:{{forfait.hotel.nomhotel}} </p>
-<p>nombre d'etoiles:{{forfait.hotel.nombreetoileshotel}} </p>
-<div *ngFor="let etoiles of [forfait.hotel].constructor('etoiles');">*</div>
+<p class="nomhotel">nom de l'hotel:{{forfait.hotel.nom}} </p>
+<p>nombre d'etoiles:{{forfait.hotel.nombreEtoiles}} </p>
+<app-etoiles *ngFor="let etoiles of [forfait.hotel].constructor('etoiles');"></app-etoiles>
 
 
-<p>date de depart: {{forfait.datededepart}}</p>
+<p>date de depart: {{forfait.dateDepart}}</p>
 <p>prix:{{forfait.prix}} </p>
+</div>
 </div>

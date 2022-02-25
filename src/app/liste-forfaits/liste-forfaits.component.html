@@ -1,16 +1,12 @@
-
-<mat-grid-list cols="3" rowHeight="3:1">
-  <mat-grid-tile  *ngFor="let forfait of forfaits"> 
-          <app-forfait-mini [forfait]="forfait"></app-forfait-mini>
-  </mat-grid-tile>
-</mat-grid-list>
-
-<div *ngFor="let forfait of forfaits">
-    <app-forfait [forfait]="forfait"></app-forfait>
+<div class="container">
+  <div>
+  <mat-grid-list cols="3" rowHeight="3:1">
+    <mat-grid-tile  *ngFor="let forfait of forfaits"> 
+            <app-forfait-mini [forfait]="forfait"></app-forfait-mini>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>
-
-
-
-
-
-
+  <div *ngFor="let forfait of forfaits">
+      <app-forfait [forfait]="forfait"></app-forfait>
+  </div>
+</div>

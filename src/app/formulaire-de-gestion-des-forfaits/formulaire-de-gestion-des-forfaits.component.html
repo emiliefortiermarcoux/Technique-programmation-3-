@@ -1,1 +1,6 @@
-<p>formulaire-de-gestion-des-forfaits works!</p>
+
+
+<app-tableau-forfaits (majTableau)="getProduits()"; ></app-tableau-forfaits>
+<ng-template [ngIf]="selectedForfait">
+    <app-tableau-forfaits [forfait]="selectedForfait" ></app-tableau-forfaits>
+</ng-template>

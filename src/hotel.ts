@@ -1,9 +1,9 @@
 export interface Hotel{
     id: number;
-    nomhotel: string;
-    coordonneeshotel: string;
-    nombreetoileshotel: number;
-    nombrechambreshotel: number;
-    caracteristiqueshotel: string;
-    image: string;
+    nom: string;
+    coordonnees: string;
+    nombreEtoiles: number;
+    nombreChambres: number;
+    caracteristiques: string;
+    image?: string;
 }
